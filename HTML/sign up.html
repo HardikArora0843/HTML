@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title> Login </title>
+        <style>
+            *{
+                box-sizing : border-box;  /* by this input will end just before screen but without this it will go beyond screen */
+            }
+            input[type="text"], input[type="password"]{   /* by this input specification we specify ki sirf text and password wale type */
+                width: 100%;                                                                                     /*  pe hi following changes honge */
+                font-size:20px;        /* by width=100% input box full expand ho jayega by which it will automatically come to next line */
+                padding: 12px;
+                margin:5px 0px 20px 0px;            /* margin is used for space b/w input box and email heading*/ 
+                border: none;                         /* by this border of input box will be invisible */
+                background-color: #f1f2f3;       /* by this background of input box will be very light white(cream)  */
+            }                                  /* here hexa decimal is used we can use rgb also */ 
+            h1{
+                text-align:center;
+            }
+            img{
+                margin-left:350px ;     /* to put image in center */               
+            }
+
+            label{                 /* heading( Email, Password) ka font size change karne ke liye */
+                font-size: 18px;
+            }
+
+            hr{
+                border: 2px solid black;
+                margin-bottom: 20px;
+            }
+            button{ 
+                font-size: 18px;
+                padding: 14px 20px;
+                background-color :rgb(15,120,15);
+                border: none;
+                width: 100%;
+                opacity: 0.75;      /* by opacity it  will show how much the button will be dull */
+                margin: 10px 0px;
+                color:  white;      /* here color white is used before using anchor tag to make button visible */
+                cursor: pointer;     /* by this a hand pointer will com e when we will go to button */
+            }
+            button:hover{
+                opacity:1;   /* by button hover , when we will go to button to kitna wo dark ho jaye for that opacity(1) is added */ 
+            }
+            .cancel{
+                background-color:red;     /* here .cancel is used to make changes in particular thing */
+            }
+            a{
+                color:white;         /* by this anchor color will change except t&c conditions as i have added color to it */
+            }
+         </style>
+    </head>
+    <body> 
+        <form>
+                <img src="img abc.webp">    <!-- image paste ki hai -->
+                <br>
+                <h1 style="color:blue"> Sign Up Page </h1> 
+                <hr> 
+                
+                <label><b> Email </b></label>        <!-- label tag is used to add heading of form -->
+                <input type="text" placeholder="Enter you email">   <!-- input tag is used to input data, with type=text as we have to enter text -->
+                                                                    <!-- placeholder is used to hold the data in email -->
+ 
+                <label><b> Password </b></label>
+                <input type="password" placeholder=" Enter you password">   <!-- by type=password letters will come as dots -->  
+                
+
+                <label><b> Re-Enter </b></label>
+                <input type="password" placeholder=" Re- enter your password">
+    
+                <label>
+                    Remember Me                     <!-- we first put'Remeber Me' and then checkbox-->  
+                </label>   
+                    <input type="checkbox" checked="checked">  <!-- by type=checkbox a checkbox will appear, by checked it will automatically  -->
+                                                                                         <!-- show checked-->
+                <br><br>
+                <p> <input type="checkbox" checked="checked">  I accept the T&C attached <a style="color:blue" href="#">Terms & Conditions</a></p>
+        
+                <br><br>
+            
+                <button class="cancel"><a href="file:///D:/VS%20CODE/sign%20up.html">Cancel</a></button> 
+                <br>                               <!-- here class is used as we have to make changes in cancel button by CSS-->
+                <button ><a href="file:///D:/VS%20CODE/blog%202.html"> Sign Up </a></button>
+        
+        </form>
+    </body>
+</html> 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CS Blog </title> 
+        <style>            
+            header{                
+                text-align: center;    
+                background: url("https://wallpaperaccess.com/full/51364.jpg ");
+                background-size:contain;             /* here contain is used by which it will adjust according to short screen */
+                color: blue;                    /* and big screen also */  /* here font color blue kara hai */ 
+            }
+            a{
+                color: white;       /* here we have change color of anchors */ 
+            }
+            img{                          
+                margin-top: 40px;               /* here we have given margin from top by this we can give from every side*/ /* R,L,D */       
+                border: 5px solid black;    /* here we have given border to image  and give color to it also */
+                border-radius: 50%;        /* by border radius corners bend hote hai, value jitni  increase hogi utna circle form aayega */
+                width:150px;            /*  agar image rectangle hogi to max elipse banega and if square hogi then max circle hoga*/
+                height: 150px;        /* by height and width same rakh ke square banega*/  /* for rectangle width kam rakhna hai*/ 
+            }                                                                                /* and heigth zyada rakhni hai */ 
+            ul{
+                background: rgba(255,100,255,0.3);     /* here background for points is given  */
+                padding:30px;    /* padding means background border se kitna gap hoga, here we have given 30px gap but */
+            }                /* if we'll give less gap then data chipak jayega with background border */
+            li{                         /* by this data will come in single line jabki pehle ek ke neeche ek tha */
+                display: inline;             /* here padding is in clockwise order (T,R,B,L) */  /* in li padding is b/w data but  */
+                padding:0px 40px 0px 40px;    /* in ul it was b/w data and background border */  /* if data is inline then T,B ka gap */
+            }                  /*  meaningless hai sirf R,L kar sakte hai but if it is block then T,B ka gap meaningfull hoga */
+            article{
+                max-width: 500px;           /* max width is used for keeping the content in particular width taki sab ek line mein aaye*/
+                padding:10px 20px 30px 50px;        /* here padding is beween two articles */   
+            }                                  /* @media is used so that we can make changes according to a smaller screen (phone)*/
+        
+                @media (max-width:600px){    /* here max width means that is width walli screen pe following changes honge */    
+                h1{                             /* jitna max width increase hoga utna screen chota hoga */
+                    color: red;         /* here color is red for a screen which is small according to width mention above */  
+                }
+                li{
+                    display: block;   /* here li ko block, choti screen ke liye kiya hai coz phone screen pe inline elements nahi dikh */
+                }                     /* pate isliye unhe block kiya hai for phone screen taki wo elements phone pe bhi visible ho */
+            }
+        
+        </style>
+    </head>
+    <body style="background-color: rgba(249, 89, 116,0.5)">
+        <header>                                          <!-- header tag is used as humein heading mein changes karne hain -->
+            <img src="abc.jpg" >  
+            <h1> Hardik's Blog </h1>
+            <ul>                                                    <!-- ul means 'unordered list' means dots -->
+                <li><a href="#"> About Us </a></li>
+                <li><a href="#"> Video </a></li>        <!-- here href is used for link that will open when--> 
+                <li><a href="#"> Contact Us </a></li>       <!-- we will click on this anchor-->   
+            </ul>                                                      <!-- li means list element now we can add elements-->
+        </header>
+
+         <article>                                                 <!-- article tag is used for writing blog"s content-->
+            <h2> My First Blog</h2>
+            <p> I am learning about blogging page.</p>    
+            <button> Like </button> 
+        </article>
+
+        <article>
+            <h2> My Second Blog</h2>
+            <p> I am learning about blogging page. </p>
+            <button> Comment </button>
+        </article>   
+    </body>
+</html>
